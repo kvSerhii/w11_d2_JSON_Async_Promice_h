@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 // Таски на переменные:
 // 1) Создайте две переменные a и b. Выведите в консоль результ их умножения.
@@ -47,7 +47,6 @@
 // num++;
 // num--;
 
-
 // Таски на prompt:
 // 1) Запросить число у пользователя и возвести его в квадрат
 // let userNumber = +prompt("Enter a number");
@@ -58,7 +57,6 @@
 // let userNumberOne = +prompt("Enter a number");
 // let userNumberTwo = +prompt("Enter a number");
 // console.log((userNumberOne + userNumberTwo) / 2);
-
 
 // 3) Перевести число минут в секунды. Число спрашивать у пользователя.
 // let userMinutes = +prompt("Enter a number");
@@ -118,14 +116,16 @@ if (!test) {
    Сумму покупки вводит юзер.*/
 /* let sum = +prompt("Enter a sum");
 console.log(sum);
-if (sum >= 500 && sum < 800) {
-    alert(`Ваша скидка ${parseInt(sum/100*3)}`);
+if (sum < 500) {
+    alert(`Сумма покупки: ${sum}`);
+} else if (sum >= 500 && sum < 800) {
+    alert(`Сумма покупки: ${sum - parseInt((sum / 100) * 3)}`);
 } else if (sum >= 800) {
-    alert(`Ваша скидка ${parseInt(sum/100*5)}`);
+    alert(`Ваша скидка ${sum - parseInt((sum / 100) * 5)}`);
 } else {
-    alert("Скидки нет!");
-} */
-
+    alert("Неверное значение");
+}
+ */
 /*  Таски на циклы. Каждую задачу решить всеми тремя циклами!
     1) Вывод чисел от 25 до 0 (порядок уменьшения)*/
 /* //For
@@ -252,8 +252,8 @@ do {
 
 function isAdult(age) {
     if (age >= 18) {
-        console.log(true);
+        return console.log(true);
     } else {
-        console.log(false);
+        return console.log(false);
     }
 } */
