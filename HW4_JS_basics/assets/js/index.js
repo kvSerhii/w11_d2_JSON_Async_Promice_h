@@ -247,13 +247,25 @@ do {
 Ожидаемый вывод:
     isAdult(20); // true
     isAdult(4); // false*/
-
-/* isAdult(+prompt("Enter your age"));
+/* 
+console.log(isAdult(+prompt("Enter your age")));
 
 function isAdult(age) {
     if (age >= 18) {
-        return console.log(true);
+        return true;
     } else {
-        return console.log(false);
+        return false;
     }
 } */
+
+// 2
+let result = isAdult(+prompt("Enter your age"));
+console.log(result);
+
+function isAdult(age) {
+    if (age >= 18) {
+        return true;
+    } else {
+        return false;
+    }
+}
